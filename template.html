@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="lib/bootstrap.min.css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	  
+	  
+	  <script src="lib/jquery.min.js"></script>
+	  <script src="lib/bootstrap.min.js"></script>
+	  
+      
+  
+	  
+      <title>Hello, world!</title>
+      <style>
+         .btn-white {
+         background: #fff !important;
+         }
+      </style>
+
+   </head>
+   <body>
+       <div class="container-fluid mt-3">
+          <form>
+            <div class="card">
+               <div class="card-header">
+                  <h4 class="alert-heading">Student Admission</h4>
+                  <p>Student Information / Student Admission</p>
+               </div>
+                 <div class="card-body">
+                    <div class="row">
+                        <div class="form-group col-3">
+                            <label for="inputadmission"> Admission No</label>
+                            <input type="text" class="form-control" id="admissionNo">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="inputrollno"> Roll No</label>
+                            <input type="text" class="form-control" id="rollNo">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="inputclass"> Class</label>
+                            <select class="custom-select" id="class">
+                                <option selected>Select</option>
+                                <option>Class1</option>
+                                <option>Class2</option>
+                                <option>Class3</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="inputsecetion"> Section</label>
+                            <select class="custom-select" id="section">
+                                <option select>select</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-3">
+                            <label for="inputfirstname"> First Name</label>
+                            <input type="text" class="form-control" id="firstName">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="inputlastname">Last Name</label>
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="inputgender"> Gender</label>
+                            <select class="form-control" id="gender">
+                                <option selected>Female</option>
+                                <option selected>Male</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="inputdateofbirth"> Date of Birth</label>
+                            <input type="date" class="form-control" id="dateOfBirth">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-2">
+                            <label for="inputcategory"> Category</label>
+                            <select class="custom-select" id="category">
+                                <option selected>Select</option>
+                                <option>OBC</option>
+                                <option>SC</option>
+                                <option>Special</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-2">
+                            <label for="inputtext"> Religion</label>
+                            <input type="text" class="form-control" id="religion">
+                        </div>
+                        <div class="form-group col-2">
+                            <label for="inputtext"> Caste</label>
+                            <input type="text" class="form-control" id="caste">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="inputnumber"> Number</label>
+                            <input type="text" class="form-control" id="Number">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="inputemail">Email</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-3">
+                            <label for="inputadmissiondate">Admission Date</label>
+                            <input type="date" class="form-control" id="admissionDate">
+                        </div>
+						<div class="form-group col-3">
+                            <label for="inputdate"> As On Date</label>
+                            <input type="date" class="form-control" id="asOnDate">
+                        </div>
+                      
+                     <div class="form-group col-3">
+                            <label for="inputbloodgroup">Blood Group</label>
+                            <select class="custom-select" id="bloodGroup">
+                                <option selected>Select</option>
+                                <option>A+</option>
+                                <option>B+</option>
+                                <option>AB+</option>
+                                <option>O+</option>
+                                <option>A-</option>
+                                <option>B-</option>
+                                <option>AB-</option>
+                                <option>O-</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="inputStudenthouse"> Student House</label>
+                            <select class="custom-select" id="studentHouse">
+                                <option selected>select</option>
+                                <option>Blue</option>
+                                <option>Green</option>i
+                                <option>Red</option>
+                                <option>Yellow</option>
+
+                            </select>
+                        </div>
+                   
+				   </div>
+                    <div class="row">
+                        <div class="form-group col-3">
+                            <label for="inputheight"> Height</label>
+                            <input type="text" class="form-control" id="height">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="inputweight"> Weight</label>
+                            <input type="text" class="form-control" id="Weight">
+                        </div>
+                          <div class="form-group col-3">
+                        <label for="exampleFormControlFile1">Student Photo</label>
+                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                        <div class="form-group col-3">
+					      <button type="button"  id="openModalBtn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+						Add Sibling
+						</button>
+						</div>
+						</div>
+					 <div class="form-group  col">
+                            <label for="inputmedicalhistory"> Medical History</label>
+                            <input type="text" class="form-control" id="medicalhistory">
+                       </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <div class=" p-3 mb-2 bg-light text-dark">Parent Guardian Detail</div>
+                        </div>
+                    </div>
+                  <div class="row">
+                     <div class="form-group col-3">
+                        <label for="inputtypefathername"> Father Name</label>
+                        <input type="text" class="form-control" id="fatherName">
+                     </div>
+                     <div class="form-group col-3">
+                        <label for="inputtypefatherphone"> Father Phone</label>
+                        <input type="text" class="form-control" id="fatherphone">
+                     </div>
+                     <div class="form-group col-3">
+                        <label for="inputtypefatheroccupation"> Father Occupation</label>
+                        <input type="text" class="form-control" id="fatherOccupation">
+                     </div>
+                     <div class="form-group col-3">
+                        <label for="inputtypefatheroccupation"> Father Photo</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="form-group col-3">
+                        <label for="inputtypemothername">Mother Name</label>
+                        <input type="text" class="form-control" id="motherName">
+                     </div>
+                     <div class=" form-group col-3">
+                        <label for="inputtypemotherphone"> Mother Phone</label>
+                        <input type="text" class="form-control" id="motherphone">
+                     </div>
+                     <div class="form-group col-3">
+                        <label for="inputtypemotheroccupation"> Mother Occupation</label>
+                        <input type="text" class="form-control" id="motherOccupation">
+                     </div>
+                     <div class="form-group col-3">
+                        <label for="inputtypefatheroccupation"> Mother Photo</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <legend class="col-form-label col-sm-2 pt-0">If Guardian Is</legend>
+                     <div class="col-sm-10">
+                        <div class="form-check form-check-inline">
+                           <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                           <label class="form-check-label" for="inlineCheckbox1">Father</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                           <label class="form-check-label" for="inlineCheckbox2">Mother</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                           <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                           <label class="form-check-label" for="inlineCheckbox3">Other</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="form-group col-3">
+                        <label for="inputtypeguardianName"> Guardian Name </label>
+                        <input type="text" class="form-control" id="guardianName">
+                     </div>
+                     <div class="form-group col-3">
+                        <label for="inputtypeguardianrelation"> Guardian Relation</label>
+                        <input type="text" class="form-control" id="guardianRelation">
+                     </div>
+                     <div class="form-group col-3">
+                        <label for="inputtypeguardianEmail"> Guardian Email</label>
+                        <input type="email" class="form-control" id="guardianEmail">
+                     </div>
+                     <div class="form-group col-3">
+                        <label for="inputtypefatheroccupation"> Guardian Photo</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="form-group col-3">
+                        <label for="inputtypeguardianPhone ">Guardian Phone </label>
+                        <input type="text" class="form-control" id="guardianPhone">
+                     </div>
+                     <div class="form-group col-3">
+                        <label for="inputtypeguardianoccupation"> Guardian Occupation</label>
+                        <input type="text" class="form-control" id="guardianOccupation">
+                     </div>
+                     <div class="form-group col-6">
+                        <label for="inputtypeguardianaddress"> Guardian Address</label>
+                        <input type="email" class="form-control" id="Guardian Address">
+                     </div>
+                  </div>
+                  <div id="accordion">
+                    <div class="card">
+                        <div class="card-header">
+                           <a class="card-link text-dark" data-toggle="collapse" href="#collapseOne">
+                              <span class="float-right">
+                              <i class="fa fa-arrow-down"></i>
+                              </span>
+                              <h6>Add More Detail</h6>
+                           </a>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                           <div class="card-body">
+                              <div class="row">
+                                 <div class="form-group col">
+                                    <div class=" p-2 mb-2 bg-light text-dark">Student Address Details</div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-6">
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+									  <label class="form-check-label" for="inlineCheckbox1">If Guardian Address is Current Address</label>
+									</div>
+                                 </div>
+                                 <div class="col-6">
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+									  <label class="form-check-label" for="inlineCheckbox1">If Permanent Address is Current Address</label>
+									</div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="form-check col-6">
+                                    <label for="inputcurrentaddress">Current Address</label>
+                                    <input type="text" class="form-control" id="currentAddress">
+                                 </div>
+                                 <div class="form-check col-6">
+                                    <label for="inputcurrentaddress">Permanent Address</label>
+                                    <input type="text" class="form-control" id="currentAddress">
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col">
+                                    <div class="p-2 mb-2 mt-4 bg-light text-dark">Transport Details</div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="form-group col-4">
+                                    <label for="typeroute">Route List</label>
+                                    <select class="custom-select" id="routelist">
+                                       <option Selected>Select</option>
+                                       <option>Nagpur</option>
+                                       <option> Bhandara</option>
+                                       <option> Gondia</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="form-group col">
+                                    <div class="p-2 mb-2 bg-light text-dark">Hostel Details</div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="form-group col-6">
+                                    <label for="examplehostel">Hostel</label>
+                                    <select class="custom-select" id="hostel">
+                                       <option selected>Select</option>
+                                       <option>Girls Hostel</option>
+                                       <option>Boys Hostel</option>
+                                    </select>
+                                 </div>
+                                 <div class="form-group col-6">
+                                    <label for="exampleroom number"> Room Number</label>
+                                    <input type="text" class="form-control" id="roomNumber">
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="form-group col">
+                                    <div class="p-2 mb-2 bg-light text-dark">Miscellaneous Details</div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="form-group col-4">
+                                    <label for="examplebankaccountnumber">Bank Account Number</label>
+                                    <input type="text" class="form-control" id="bankaccountnumber">
+                                 </div>
+                                 <div class="form-group col-4">
+                                    <label for="examplebankname">Bank Name</label>
+                                    <input type="text" class="form-control" id="bankname">
+                                 </div>
+                                 <div class="form-group col-4">
+                                    <label for="exampleifsc"> IFSC Code</label>
+                                    <input type="text" class="form-control" id="ifsccode">
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="form-group col-4">
+                                    <label for="examplenationalidentificationnumber">National Identification Number</label>
+                                    <input type="text" class="form-control" id="nationalIdentificationNumber">
+                                 </div>
+                                 <div class="form-group col-4">
+                                    <label for="exampleocalidentificationNumber">Local Identification Number </label>
+                                    <input type="text" class="form-control" id="localIdentificationNumber">
+                                 </div>
+								 <div class="col-4"> 
+									<div class="form-group">
+										<label for="examplerte">RTE</label>
+										<div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+												<label class="form-check-label" for="gridRadios1">
+												Yes
+												</label>
+											 </div>
+											 <div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option1" checked>
+												<label class="form-check-label" for="gridRadios2">
+												No
+												</label>
+											 </div>
+										</div>
+									</div>
+								 </div>
+                              </div>
+                            <div class="row">
+							    <div class="col-md-6">
+						        <div class="form-group>
+                                    <label for="examplepreviousschooldetails">Previous School Details</label>
+                                    <input type="text" class="form-control" rows="3" id="previousschooldetails">
+									<span class="text-danger"></span>
+                                 </div>
+								 </div>
+								<div class="form-group col-6">
+                                    <label for="note">Note </label>
+                                    <input type="text" class="form-control" id="note">
+                                 </div>
+                            </div>
+							<div class="row">
+							<div class="form-group col">
+							 <div class="p-2 mb-2 bg-light text-dark">Upload Documents</div>
+							</div>
+						   </div>
+						    <div class="row">
+								<div class="col-md-6">
+									<table class=" table table-border">
+									<tbody>
+								 <tr>
+								   <th style="width: 10px">#</th>
+									<th scope="col"> Title</th>
+									<th scope="col">Document</th>
+							     </tr>
+				            <tr>
+							<td>1</td>
+							<td>
+							<input type="text"  name=" first-title"class="form-control">
+							</td>
+							<td><button class="btn btn-primary">Select Document</button> </td>
+						 	</tr>
+						  </tbody>
+				         </table>
+					      </div>
+					      <div class="col-md-6">
+							<table class=" table table-border">
+							<tbody>
+							<tr>
+						       <th style="width: 10px">#</th>
+								<th scope="col"> Title</th>
+								<th scope="col">Document</th>
+							</tr>
+				            <tr>
+							<td>1</td>
+							<td>
+							<input type="text"  name=" first-title"class="form-control">
+							</td>
+							<td><button class="btn btn-primary">Select Document</button> </td>
+						 	</tr>
+						  </tbody>
+					     </table>
+					      </div>
+					</div>
+				          	
+                        </div>		
+                    </div>
+				  </div>
+                 </div>				  
+                </div>
+			  <div class="card-footer">
+                  <button type="button" class="btn btn-white">Cancel</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+               </div>
+             </div>
+			</form>
+       </div>
+	   					   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						   <div class="modal-dialog">
+						    <div class="modal-content">
+							<div class="modal-header">
+							<h5 class="modal-title" id="exampleModallable">Sibling</h5>
+							<button  type="button" class="close" data-dismiss="modal" area-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						     <div class="modal-body">
+							 <div class="row">
+							 <div class="col-6">
+							   <div class="form-group">
+							 <label for="inputclass" class="col-form-label"> Class</label>
+							  <select class="custom-select" id="class">
+							  <option selected>Select</option>
+							  <option>Class1</option>
+							  <option>Class2</option>
+							  <option>Class3</option>
+							  </select>
+							  </div>
+							  </div>
+							  </div>
+							  <div class="row">
+							  <div class="col-6">
+							  <div class="form-group">
+							  <label for="inputsection" class="col-form-label">Section</label>
+							  <select class="custom-select" id="select">
+							  <option selected>Select</option>
+							  </select>
+							  </div>
+							  </div>
+							  </div>
+							  <div class="row">
+							  <div class="col-6">
+							  <div class="form-group">
+							  <label for="inputstudent" class="col=form-label">Student</label>
+							  <select class="custom-select" id="student">
+							  <option selected>Select</option>
+							  </select>
+							  </div>
+							  </div>
+							  </div>
+							  </div>
+							  <div class="modal-footer">
+							  <button type="button" class="btn btn-primary"> Add</button>
+							  </div>
+							 </div>
+						 </div>
+						</div>
+							
+						</div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      
+	  </body>
+      </html>
